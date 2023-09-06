@@ -8,11 +8,27 @@
 
 <script>
 export default {
+  // props: ['w'],
   // 1.基础写法（类型校验）
-  props:{
-      w:Number
-  }
+  // props:{
+  //     w:Number
+  // }
   // 2.完整写法（类型、是否必填、默认值、自定义校验）
+    props:{
+      w:{
+        type:Number,// Number string Boolean...
+        // required:true,
+        default:10,
+        validator(value){
+          if(value>0 && value<=100){
+            return true
+          }else{
+            console.error('props数值错误')
+            return false
+          }
+        }
+      }
+    }
 }
 </script>
 

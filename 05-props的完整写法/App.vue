@@ -3,13 +3,12 @@
     <BaseProgress :w="width"></BaseProgress>
   </div>
 </template>
-
 <script>
 import BaseProgress from './components/BaseProgress.vue'
 export default {
   data() {
     return {
-      width:20,
+      width: 1000,
     }
   },
   components: {
@@ -18,5 +17,4 @@ export default {
 }
 </script>
 
-<style>
-</style>
+<style></style>
