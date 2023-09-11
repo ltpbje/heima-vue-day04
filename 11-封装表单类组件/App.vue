@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import BaseSelect from './components/BaseSelect.vue'
+import BaseSelect from './components/BaseSelect'
 export default {
   data() {
     return {
